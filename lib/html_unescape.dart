@@ -3,7 +3,7 @@
 // file.
 
 /// Unescapes HTML5-escaped strings.
-library html_unescape;
+library;
 
 import 'src/base.dart';
 import 'src/data/named_chars_all.dart' as data;

@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:path/path.dart' as path;
 import 'dart:async';
 
-// TODO: use https://www.w3.org/TR/html51/entities.json instead?
 Future<void> main() async {
   const url = 'https://raw.githubusercontent.com/unbescape/unbescape/master/'
       'src/main/java/org/unbescape/html/Html5EscapeSymbolsInitializer.java';
@@ -21,7 +20,7 @@ Future<void> main() async {
   var refLines =
       contents.where((line) => line.contains('html5References.addReference'));
   var map = <String, String>{};
-  refLines.forEach((line) {
+  for (var line in refLines) {
     var csv = line
         .replaceAll('html5References.addReference(', '')
         .replaceAll(');', '');
@@ -30,11 +29,11 @@ Future<void> main() async {
     var ord = int.parse(values.first);
     if (ord >= 119964) {
       // This is UTF-16 territory. Ignore that.
-      return;
+      continue;
     }
     var str = String.fromCharCode(ord);
     map[key] = str;
-  });
+  }
 
   await writeMapToFile(map, 'named_chars_all.dart');
 
@@ -50,7 +49,7 @@ Future<void> main() async {
   print('Done');
 }
 
-Future writeMapToFile(Map<String, String> map, String filename) async {
+Future<dynamic> writeMapToFile(Map<String, String> map, String filename) async {
   final jsonCodec = JsonEncoder.withIndent('  ');
 
   var keysList = map.keys.toList();

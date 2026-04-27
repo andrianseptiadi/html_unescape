@@ -1,5 +1,5 @@
 // This is auto-generated from tool/generate_map.dart.
-library html_unescape.named_chars_all;
+library;
 
 const List<String> keys = <String>[
   '&CounterClockwiseContourIntegral;',
@@ -3770,7 +3770,7 @@ const List<String> values = <String>[
   '¸',
   '¶',
   'µ',
-  '\"',
+  '"',
   '´',
   '³',
   '²',
@@ -3801,7 +3801,7 @@ const List<String> values = <String>[
   '¢',
   '¡',
   '↓',
-  '\"',
+  '"',
   '→',
   ' ',
   '↑',
@@ -3957,7 +3957,7 @@ const List<String> values = <String>[
   '¨',
   '¨',
   '¨',
-  '\"',
+  '"',
   '©',
   '©',
   '‏',
@@ -3978,7 +3978,7 @@ const List<String> values = <String>[
   '®',
   '¯',
   '°',
-  '\"',
+  '"',
   '²',
   '³',
   'э',

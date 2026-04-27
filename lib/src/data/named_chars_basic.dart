@@ -1,5 +1,5 @@
 // This is auto-generated from tool/generate_map.dart.
-library html_unescape.named_chars_basic;
+library;
 
 const List<String> keys = <String>[
   '&DiacriticalGrave;',
@@ -463,7 +463,7 @@ const List<String> values = <String>[
   'ë',
   '>',
   '(',
-  '\"',
+  '"',
   '{',
   '½',
   ')',
@@ -476,11 +476,11 @@ const List<String> values = <String>[
   '!',
   '<',
   'Þ',
-  '\"',
+  '"',
   'æ',
   '=',
   'Ö',
-  '\"',
+  '"',
   'ÿ',
   'ö',
   'Ð',
@@ -519,7 +519,7 @@ const List<String> values = <String>[
   '¨',
   '§',
   '/',
-  '\"',
+  '"',
   '¥',
   '\t',
   '^',
